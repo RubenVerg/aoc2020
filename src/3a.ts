@@ -2,13 +2,6 @@ import e from './tools/main';
 
 type XY = [number, number];
 
-enum Direction {
-	NORTH,
-	SOUTH,
-	EAST,
-	WEST
-}
-
 class Field {
 	private constructor(private readonly _trees: XY[], public readonly height: number, private readonly width: number) {
 		this.check();
