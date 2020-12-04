@@ -1,7 +1,7 @@
 {
-  "name": "2020",
+  "name": "aoc-ts-template",
   "version": "1.0.0",
-  "description": "Advent of Code 2020",
+  "description": "Advent of Code TS Template",
   "main": "dist/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,9 +12,16 @@
     "@types/bent": "^7.3.2",
     "@types/node": "^14.14.7",
     "bent": "^7.3.12",
-    "fs-extra": "^9.0.1"
+    "fs-extra": "^9.0.1",
+    "js-combinatorics": "^1.4.5",
+    "meow": "^8.0.0",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.1.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "moment": "^2.29.1",
+    "moment-timezone": "^0.5.32"
+  },
   "keywords": [
     "aoc",
     "adventofcode"

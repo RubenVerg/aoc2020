@@ -4,8 +4,8 @@ import { year as gYear } from './util';
 import S from './token';
 import type { Day, Year } from '../types/types';
 
-export default async function read(day: Day, year?: Year) {
-	if (readFileSync(`data/${day}`, { encoding: 'utf8' }).trim() === '') {
+export default async function read(day: Day, year?: Year, re = false) {
+	if (re || readFileSync(`data/${day}`, { encoding: 'utf8' }).trim() === '') {
 		writeFileSync(`data/${day}`, await f(year || gYear(), day,  S));
 	}
 
