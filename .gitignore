@@ -2,3 +2,4 @@
 /.vscode/settings.json
 /**/token.*
 /src/tools/token.ts
+/data
